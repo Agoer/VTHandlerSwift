@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1b4-rp-NpB">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,112 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VTHandlerSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oO5-c5-Vlp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTY-t4-PDO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.78039215689999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="音视频录制"/>
+                                        <connections>
+                                            <action selector="bothRecordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UPK-MK-F7P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7j-Jo-278">
+                                        <rect key="frame" x="0.0" y="65.5" width="414" height="55"/>
+                                        <color key="backgroundColor" red="0.81960784310000001" green="0.61960784310000006" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="视频 encode"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A75-YU-pdp">
+                                        <rect key="frame" x="0.0" y="130.5" width="414" height="55.5"/>
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.78039215689999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="视频 decode"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RF-Q8-n3u">
+                                        <rect key="frame" x="0.0" y="196" width="414" height="55.5"/>
+                                        <color key="backgroundColor" red="0.81960784310000001" green="0.61960784310000006" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="视频播放"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIv-Bt-Ov9">
+                                        <rect key="frame" x="0.0" y="261.5" width="414" height="55"/>
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.78039215689999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="音频录制"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-Ly-eT1">
+                                        <rect key="frame" x="0.0" y="326.5" width="414" height="55.5"/>
+                                        <color key="backgroundColor" red="0.81960784310000001" green="0.61960784310000006" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="音频encode"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ae-Uv-Nle">
+                                        <rect key="frame" x="0.0" y="392" width="414" height="55.5"/>
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.78039215689999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="音频decode"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6B-53-qyC">
+                                        <rect key="frame" x="0.0" y="457.5" width="414" height="55"/>
+                                        <color key="backgroundColor" red="0.81960784310000001" green="0.61960784310000006" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="音频播放"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWA-td-Xj1">
+                                        <rect key="frame" x="0.0" y="522.5" width="414" height="55.5"/>
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.78039215689999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hq-dv-tJd">
+                                        <rect key="frame" x="0.0" y="588" width="414" height="55.5"/>
+                                        <color key="backgroundColor" red="0.81960784310000001" green="0.61960784310000006" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyg-KK-LGL">
+                                        <rect key="frame" x="0.0" y="653.5" width="414" height="55"/>
+                                        <color key="backgroundColor" red="0.34901960780000002" green="0.78039215689999997" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNc-FI-QYT">
+                                        <rect key="frame" x="0.0" y="718.5" width="414" height="55.5"/>
+                                        <color key="backgroundColor" red="0.81960784310000001" green="0.61960784310000006" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oO5-c5-Vlp" secondAttribute="trailing" id="2Hd-Pn-lsY"/>
+                            <constraint firstItem="oO5-c5-Vlp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PNa-3E-3M1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oO5-c5-Vlp" secondAttribute="bottom" id="bya-FM-ly3"/>
+                            <constraint firstItem="oO5-c5-Vlp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jhd-oO-RR2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Jbl-Iu-wMT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="971" y="-654"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F0K-vd-KDR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1b4-rp-NpB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nr5-36-q22">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="seh-d8-7th"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBB-vP-vjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="-653.57142857142856"/>
         </scene>
     </scenes>
 </document>

@@ -12,6 +12,12 @@
 		9162A304230C0A1400ED6864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9162A302230C0A1400ED6864 /* Main.storyboard */; };
 		9162A306230C0A1500ED6864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9162A305230C0A1500ED6864 /* Assets.xcassets */; };
 		9162A309230C0A1500ED6864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9162A307230C0A1500ED6864 /* LaunchScreen.storyboard */; };
+		9162A311230CD86300ED6864 /* VideoRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A310230CD86300ED6864 /* VideoRecordController.swift */; };
+		9162A313230CD87600ED6864 /* AudioRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A312230CD87600ED6864 /* AudioRecordController.swift */; };
+		9162A315230CD8A600ED6864 /* BothRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A314230CD8A600ED6864 /* BothRecordController.swift */; };
+		9162A317230CD8BD00ED6864 /* BothEncodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A316230CD8BD00ED6864 /* BothEncodeController.swift */; };
+		9162A319230CD8CF00ED6864 /* BothDecodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A318230CD8CF00ED6864 /* BothDecodeController.swift */; };
+		9162A31B230CD90700ED6864 /* BothPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A31A230CD90700ED6864 /* BothPlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		9162A305230C0A1500ED6864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9162A308230C0A1500ED6864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9162A30A230C0A1500ED6864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9162A310230CD86300ED6864 /* VideoRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordController.swift; sourceTree = "<group>"; };
+		9162A312230CD87600ED6864 /* AudioRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordController.swift; sourceTree = "<group>"; };
+		9162A314230CD8A600ED6864 /* BothRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothRecordController.swift; sourceTree = "<group>"; };
+		9162A316230CD8BD00ED6864 /* BothEncodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothEncodeController.swift; sourceTree = "<group>"; };
+		9162A318230CD8CF00ED6864 /* BothDecodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothDecodeController.swift; sourceTree = "<group>"; };
+		9162A31A230CD90700ED6864 /* BothPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothPlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,12 @@
 			children = (
 				9162A2FE230C0A1400ED6864 /* AppDelegate.swift */,
 				9162A300230C0A1400ED6864 /* ViewController.swift */,
+				9162A310230CD86300ED6864 /* VideoRecordController.swift */,
+				9162A312230CD87600ED6864 /* AudioRecordController.swift */,
+				9162A314230CD8A600ED6864 /* BothRecordController.swift */,
+				9162A316230CD8BD00ED6864 /* BothEncodeController.swift */,
+				9162A318230CD8CF00ED6864 /* BothDecodeController.swift */,
+				9162A31A230CD90700ED6864 /* BothPlayerController.swift */,
 				9162A302230C0A1400ED6864 /* Main.storyboard */,
 				9162A305230C0A1500ED6864 /* Assets.xcassets */,
 				9162A307230C0A1500ED6864 /* LaunchScreen.storyboard */,
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9162A315230CD8A600ED6864 /* BothRecordController.swift in Sources */,
 				9162A301230C0A1400ED6864 /* ViewController.swift in Sources */,
+				9162A317230CD8BD00ED6864 /* BothEncodeController.swift in Sources */,
+				9162A31B230CD90700ED6864 /* BothPlayerController.swift in Sources */,
+				9162A319230CD8CF00ED6864 /* BothDecodeController.swift in Sources */,
+				9162A311230CD86300ED6864 /* VideoRecordController.swift in Sources */,
 				9162A2FF230C0A1400ED6864 /* AppDelegate.swift in Sources */,
+				9162A313230CD87600ED6864 /* AudioRecordController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37WBFPMRW3;
 				INFOPLIST_FILE = VTHandlerSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37WBFPMRW3;
 				INFOPLIST_FILE = VTHandlerSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
