@@ -1,0 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BSBacktraceLogger" "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack" "${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit" "${PODS_CONFIGURATION_BUILD_DIR}/PNChart" "${PODS_CONFIGURATION_BUILD_DIR}/UICountingLabel" "${PODS_CONFIGURATION_BUILD_DIR}/fishhook" "${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/BSBacktraceLogger/BSBacktraceLogger.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/PNChart/PNChart.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/UICountingLabel/UICountingLabel.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/fishhook/fishhook.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "BSBacktraceLogger" -framework "CocoaLumberjack" -framework "CoreGraphics" -framework "DoraemonKit" -framework "DoraemonLoadAnalyze" -framework "Foundation" -framework "PNChart" -framework "QuartzCore" -framework "UICountingLabel" -framework "UIKit" -framework "fishhook"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

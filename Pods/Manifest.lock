@@ -1,0 +1,50 @@
+PODS:
+  - BSBacktraceLogger (0.0.1)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - DoraemonKit/Core (1.2.2):
+    - BSBacktraceLogger
+    - fishhook
+    - PNChart
+  - DoraemonKit/WithLoad (1.2.2):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+  - DoraemonKit/WithLogger (1.2.2):
+    - BSBacktraceLogger
+    - CocoaLumberjack
+    - DoraemonKit/Core
+    - fishhook
+    - PNChart
+  - fishhook (0.2)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - UICountingLabel (1.2.0)
+
+DEPENDENCIES:
+  - DoraemonKit/Core
+  - DoraemonKit/WithLoad
+  - DoraemonKit/WithLogger
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BSBacktraceLogger
+    - CocoaLumberjack
+    - DoraemonKit
+    - fishhook
+    - PNChart
+    - UICountingLabel
+
+SPEC CHECKSUMS:
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  DoraemonKit: ea50d30db95bd7ce978e964b2bb90c588a19a2a3
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+
+PODFILE CHECKSUM: eb983176afbaf6af9339bfed76e91a44daab5410
+
+COCOAPODS: 1.6.0.beta.1

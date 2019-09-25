@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8770EED215A665B36B202F25 /* Pods_VTHandlerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B0419EAC4DB67E2FFBB0FE /* Pods_VTHandlerSwift.framework */; };
+		9152C762232202B400CF5F03 /* AGRecordEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152C761232202B400CF5F03 /* AGRecordEncoder.swift */; };
+		9152C764232267D500CF5F03 /* AGRecordEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152C763232267D500CF5F03 /* AGRecordEngine.swift */; };
 		9162A2FF230C0A1400ED6864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A2FE230C0A1400ED6864 /* AppDelegate.swift */; };
 		9162A301230C0A1400ED6864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A300230C0A1400ED6864 /* ViewController.swift */; };
 		9162A304230C0A1400ED6864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9162A302230C0A1400ED6864 /* Main.storyboard */; };
 		9162A306230C0A1500ED6864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9162A305230C0A1500ED6864 /* Assets.xcassets */; };
 		9162A309230C0A1500ED6864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9162A307230C0A1500ED6864 /* LaunchScreen.storyboard */; };
-		9162A311230CD86300ED6864 /* VideoRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A310230CD86300ED6864 /* VideoRecordController.swift */; };
-		9162A313230CD87600ED6864 /* AudioRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A312230CD87600ED6864 /* AudioRecordController.swift */; };
 		9162A315230CD8A600ED6864 /* BothRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A314230CD8A600ED6864 /* BothRecordController.swift */; };
 		9162A317230CD8BD00ED6864 /* BothEncodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A316230CD8BD00ED6864 /* BothEncodeController.swift */; };
 		9162A319230CD8CF00ED6864 /* BothDecodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A318230CD8CF00ED6864 /* BothDecodeController.swift */; };
 		9162A31B230CD90700ED6864 /* BothPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162A31A230CD90700ED6864 /* BothPlayerController.swift */; };
+		91F42CD12327962C008E3610 /* MediasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F42CD02327962C008E3610 /* MediasController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9152C761232202B400CF5F03 /* AGRecordEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGRecordEncoder.swift; sourceTree = "<group>"; };
+		9152C763232267D500CF5F03 /* AGRecordEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGRecordEngine.swift; sourceTree = "<group>"; };
 		9162A2FB230C0A1400ED6864 /* VTHandlerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTHandlerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9162A2FE230C0A1400ED6864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9162A300230C0A1400ED6864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,12 +32,14 @@
 		9162A305230C0A1500ED6864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9162A308230C0A1500ED6864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9162A30A230C0A1500ED6864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9162A310230CD86300ED6864 /* VideoRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordController.swift; sourceTree = "<group>"; };
-		9162A312230CD87600ED6864 /* AudioRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordController.swift; sourceTree = "<group>"; };
 		9162A314230CD8A600ED6864 /* BothRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothRecordController.swift; sourceTree = "<group>"; };
 		9162A316230CD8BD00ED6864 /* BothEncodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothEncodeController.swift; sourceTree = "<group>"; };
 		9162A318230CD8CF00ED6864 /* BothDecodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothDecodeController.swift; sourceTree = "<group>"; };
 		9162A31A230CD90700ED6864 /* BothPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothPlayerController.swift; sourceTree = "<group>"; };
+		91F42CD02327962C008E3610 /* MediasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediasController.swift; sourceTree = "<group>"; };
+		B66712660C2BD1E4BA8C7829 /* Pods-VTHandlerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTHandlerSwift.debug.xcconfig"; path = "Target Support Files/Pods-VTHandlerSwift/Pods-VTHandlerSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		BC059D2F4F2C699537BEE0C0 /* Pods-VTHandlerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VTHandlerSwift.release.xcconfig"; path = "Target Support Files/Pods-VTHandlerSwift/Pods-VTHandlerSwift.release.xcconfig"; sourceTree = "<group>"; };
+		F2B0419EAC4DB67E2FFBB0FE /* Pods_VTHandlerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VTHandlerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8770EED215A665B36B202F25 /* Pods_VTHandlerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CD319CABD14D9896E660A9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B66712660C2BD1E4BA8C7829 /* Pods-VTHandlerSwift.debug.xcconfig */,
+				BC059D2F4F2C699537BEE0C0 /* Pods-VTHandlerSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		728961FE2294BC2975DE4612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2B0419EAC4DB67E2FFBB0FE /* Pods_VTHandlerSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9162A2F2230C0A1400ED6864 = {
 			isa = PBXGroup;
 			children = (
 				9162A2FD230C0A1400ED6864 /* VTHandlerSwift */,
 				9162A2FC230C0A1400ED6864 /* Products */,
+				3CD319CABD14D9896E660A9E /* Pods */,
+				728961FE2294BC2975DE4612 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,12 +95,13 @@
 			children = (
 				9162A2FE230C0A1400ED6864 /* AppDelegate.swift */,
 				9162A300230C0A1400ED6864 /* ViewController.swift */,
-				9162A310230CD86300ED6864 /* VideoRecordController.swift */,
-				9162A312230CD87600ED6864 /* AudioRecordController.swift */,
+				91F42CD02327962C008E3610 /* MediasController.swift */,
 				9162A314230CD8A600ED6864 /* BothRecordController.swift */,
 				9162A316230CD8BD00ED6864 /* BothEncodeController.swift */,
 				9162A318230CD8CF00ED6864 /* BothDecodeController.swift */,
 				9162A31A230CD90700ED6864 /* BothPlayerController.swift */,
+				9152C761232202B400CF5F03 /* AGRecordEncoder.swift */,
+				9152C763232267D500CF5F03 /* AGRecordEngine.swift */,
 				9162A302230C0A1400ED6864 /* Main.storyboard */,
 				9162A305230C0A1500ED6864 /* Assets.xcassets */,
 				9162A307230C0A1500ED6864 /* LaunchScreen.storyboard */,
@@ -89,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9162A30D230C0A1500ED6864 /* Build configuration list for PBXNativeTarget "VTHandlerSwift" */;
 			buildPhases = (
+				64BE3D30AAA375C88D69DF9F /* [CP] Check Pods Manifest.lock */,
 				9162A2F7230C0A1400ED6864 /* Sources */,
 				9162A2F8230C0A1400ED6864 /* Frameworks */,
 				9162A2F9230C0A1400ED6864 /* Resources */,
+				EA0C8C916F8E31FF730D313E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,19 +178,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64BE3D30AAA375C88D69DF9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VTHandlerSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA0C8C916F8E31FF730D313E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VTHandlerSwift/Pods-VTHandlerSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BSBacktraceLogger/BSBacktraceLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework",
+				"${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework/DoraemonLoadAnalyze.framework",
+				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
+				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/fishhook/fishhook.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSBacktraceLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonLoadAnalyze.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fishhook.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VTHandlerSwift/Pods-VTHandlerSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9162A2F7230C0A1400ED6864 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F42CD12327962C008E3610 /* MediasController.swift in Sources */,
+				9152C762232202B400CF5F03 /* AGRecordEncoder.swift in Sources */,
 				9162A315230CD8A600ED6864 /* BothRecordController.swift in Sources */,
 				9162A301230C0A1400ED6864 /* ViewController.swift in Sources */,
 				9162A317230CD8BD00ED6864 /* BothEncodeController.swift in Sources */,
+				9152C764232267D500CF5F03 /* AGRecordEngine.swift in Sources */,
 				9162A31B230CD90700ED6864 /* BothPlayerController.swift in Sources */,
 				9162A319230CD8CF00ED6864 /* BothDecodeController.swift in Sources */,
-				9162A311230CD86300ED6864 /* VideoRecordController.swift in Sources */,
 				9162A2FF230C0A1400ED6864 /* AppDelegate.swift in Sources */,
-				9162A313230CD87600ED6864 /* AudioRecordController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +394,7 @@
 		};
 		9162A30E230C0A1500ED6864 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B66712660C2BD1E4BA8C7829 /* Pods-VTHandlerSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +414,7 @@
 		};
 		9162A30F230C0A1500ED6864 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC059D2F4F2C699537BEE0C0 /* Pods-VTHandlerSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

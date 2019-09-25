@@ -1,0 +1,6 @@
+framework module Pods_VTHandlerSwift {
+  umbrella header "Pods-VTHandlerSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
